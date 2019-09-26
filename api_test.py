@@ -16,7 +16,7 @@ for filename in os.listdir(imgpath):
 	#img = Image.open(imgpath+filename)
 	files = {
     'files': (imgpath, open(imgpath+filename, 'rb')),}
-	response = requests.post('api endpoint', files=files, verify=False)
+	response = requests.post('api endpoint here', files=files, verify=False)
 	response.raise_for_status() #notice the bad responses
     
 	# write to output files
